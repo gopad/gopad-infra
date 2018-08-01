@@ -14,7 +14,7 @@ drone_admins:
   - gopadz
   - tboerger
 drone_whitelist:
-  - gopad
+  - gopad/*
 drone_escalate:
   - plugins/docker
   - docker
