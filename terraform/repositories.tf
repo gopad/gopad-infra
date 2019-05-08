@@ -8,7 +8,7 @@ resource "github_repository" "homebrew-gopad" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["homebrew", "formula"]
+  topics             = ["homebrew", "formula"]
 }
 
 resource "github_repository" "gopad-android" {
@@ -21,7 +21,7 @@ resource "github_repository" "gopad-android" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["android", "client"]
+  topics             = ["android", "client"]
 }
 
 resource "github_repository" "gopad-api" {
@@ -34,7 +34,7 @@ resource "github_repository" "gopad-api" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["api", "server", "golang"]
+  topics             = ["api", "server", "golang"]
 }
 
 resource "github_repository" "gopad-cli" {
@@ -47,7 +47,7 @@ resource "github_repository" "gopad-cli" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["cli", "golang", "client"]
+  topics             = ["cli", "golang", "client"]
 }
 
 resource "github_repository" "gopad-desktop" {
@@ -60,7 +60,7 @@ resource "github_repository" "gopad-desktop" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["desktop", "client"]
+  topics             = ["desktop", "client"]
 }
 
 resource "github_repository" "gopad-docs" {
@@ -73,7 +73,7 @@ resource "github_repository" "gopad-docs" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["documentation", "docs", "hugo"]
+  topics             = ["documentation", "docs", "hugo"]
 }
 
 resource "github_repository" "gopad-go" {
@@ -86,7 +86,7 @@ resource "github_repository" "gopad-go" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["sdk", "golang", "go", "openapi", "swagger"]
+  topics             = ["sdk", "golang", "go", "openapi", "swagger"]
 }
 
 resource "github_repository" "gopad-infra" {
@@ -99,7 +99,7 @@ resource "github_repository" "gopad-infra" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["infrastructure", "ansible", "terraform", "provsioning"]
+  topics             = ["infrastructure", "ansible", "terraform", "provsioning"]
 }
 
 resource "github_repository" "gopad-ios" {
@@ -112,7 +112,7 @@ resource "github_repository" "gopad-ios" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["ios", "apple", "client"]
+  topics             = ["ios", "apple", "client"]
 }
 
 resource "github_repository" "gopad-js" {
@@ -125,7 +125,7 @@ resource "github_repository" "gopad-js" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["sdk", "javascript", "js", "openapi", "swagger"]
+  topics             = ["sdk", "javascript", "js", "openapi", "swagger"]
 }
 
 resource "github_repository" "gopad-php" {
@@ -138,7 +138,7 @@ resource "github_repository" "gopad-php" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["sdk", "php", "openapi", "swagger"]
+  topics             = ["sdk", "php", "openapi", "swagger"]
 }
 
 resource "github_repository" "gopad-python" {
@@ -151,7 +151,7 @@ resource "github_repository" "gopad-python" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["sdk", "python", "openapi", "swagger"]
+  topics             = ["sdk", "python", "openapi", "swagger"]
 }
 
 resource "github_repository" "gopad-ruby" {
@@ -164,7 +164,7 @@ resource "github_repository" "gopad-ruby" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["sdk", "ruby", "openapi", "swagger"]
+  topics             = ["sdk", "ruby", "openapi", "swagger"]
 }
 
 resource "github_repository" "gopad-scripts" {
@@ -177,7 +177,7 @@ resource "github_repository" "gopad-scripts" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["script", "bash", "provision"]
+  topics             = ["script", "bash", "provision"]
 }
 
 resource "github_repository" "gopad-ui" {
@@ -190,5 +190,5 @@ resource "github_repository" "gopad-ui" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
-  topics = ["ui", "nodejs"]
+  topics             = ["ui", "nodejs"]
 }
