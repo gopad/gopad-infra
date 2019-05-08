@@ -125,12 +125,12 @@ variable "server_image" {
 
 variable "server_datacenter" {
   type    = "string"
-  default = "fsn1-dc8"
+  default = "fsn1-dc14"
 }
 
-variable "server_backup" {
+variable "server_backups" {
   type    = "string"
-  default = "02-06"
+  default = "true"
 }
 
 variable "server_keys" {

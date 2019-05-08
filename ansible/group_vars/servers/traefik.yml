@@ -1,4 +1,5 @@
 traefik_domain: gopad.tech
 traefik_email: hostmaster@gopad.tech
+
 traefik_users:
   - gopad:$apr1$2otIpO2X$QR/KK/VH3KQeGNZA96tip0
