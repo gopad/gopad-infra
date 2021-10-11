@@ -1,13 +1,17 @@
+resource "cloudflare_zone" "gopad" {
+  zone = "gopad.tech"
+}
+
 resource "cloudflare_record" "root" {
-  domain  = "${var.cloudflare_domain}"
-  name    = "@"
+  zone_id = cloudflare_zone.gopad.id
+  name    = "gopad.tech"
   value   = "gopad-docs.netlify.com"
   type    = "CNAME"
   proxied = false
 }
 
 resource "cloudflare_record" "www" {
-  domain  = "${var.cloudflare_domain}"
+  zone_id = cloudflare_zone.gopad.id
   name    = "www"
   value   = "gopad-docs.netlify.com"
   type    = "CNAME"
@@ -15,17 +19,17 @@ resource "cloudflare_record" "www" {
 }
 
 resource "cloudflare_record" "dl" {
-  domain  = "${var.cloudflare_domain}"
+  zone_id = cloudflare_zone.gopad.id
   name    = "dl"
-  value   = "${element(var.server_names, 0)}.${var.cloudflare_domain}"
+  value   = "ingress.webhippie.de"
   type    = "CNAME"
   proxied = false
 }
 
 resource "cloudflare_record" "minio" {
-  domain  = "${var.cloudflare_domain}"
+  zone_id = cloudflare_zone.gopad.id
   name    = "minio"
-  value   = "${element(var.server_names, 0)}.${var.cloudflare_domain}"
+  value   = "ingress.webhippie.de"
   type    = "CNAME"
   proxied = false
 }

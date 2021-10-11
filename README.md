@@ -1,6 +1,5 @@
 # Gopad: Infra
 
-[![Build Status](https://cloud.drone.io/api/badges/gopad/gopad-infra/status.svg)](https://cloud.drone.io/gopad/gopad-infra)
 [![Join the Matrix chat at https://matrix.to/#/#gopad:matrix.org](https://img.shields.io/badge/matrix-%23gopad%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#gopad:matrix.org)
 
 **This project is under heavy development, it's not in a working state yet!**
