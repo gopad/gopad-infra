@@ -2,8 +2,6 @@
 
 [![General Workflow](https://github.com/gopad/gopad-infra/actions/workflows/general.yml/badge.svg)](https://github.com/gopad/gopad-infra/actions/workflows/general.yml) [![Join the Matrix chat at https://matrix.to/#/#gopad:matrix.org](https://img.shields.io/badge/matrix-%23gopad%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#gopad:matrix.org)
 
-**This project is under heavy development, it's not in a working state yet!**
-
 This repository defines the infrastructure used by this project, including setup
 of subdomains and S3 buckets.
 
@@ -13,7 +11,8 @@ TBD
 
 ## Security
 
-If you find a security issue please contact gopad@webhippie.de first.
+If you find a security issue please contact
+[gopad@webhippie.de](mailto:gopad@webhippie.de) first.
 
 ## Contributing
 
