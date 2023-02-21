@@ -24,5 +24,6 @@ provider "aws" {
 }
 
 resource "cloudflare_zone" "gopad" {
-  zone = "gopad.eu"
+  account_id = var.cloudflare_account
+  zone       = "gopad.eu"
 }
