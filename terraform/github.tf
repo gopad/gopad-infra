@@ -1,7 +1,8 @@
-resource "cloudflare_record" "github" {
+resource "cloudflare_dns_record" "github" {
   zone_id = cloudflare_zone.gopad.id
   name    = "_github-challenge-gopad-organization"
-  value   = "3a52d62106"
+  content = "3a52d62106"
   type    = "TXT"
   proxied = false
+  ttl     = 1
 }
