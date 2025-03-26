@@ -1,7 +1,7 @@
 ---
 repository:
   name: gopad-infra
-  description: "Gopad: Infra"
+  description: Infra for the Gopad project
   homepage: https://gopad.eu
   topics: gopad, etherpad, infra, infrastructure, terraform, provisioning
 
