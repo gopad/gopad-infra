@@ -3,23 +3,31 @@
 [![General Workflow](https://github.com/gopad/gopad-infra/actions/workflows/general.yml/badge.svg)](https://github.com/gopad/gopad-infra/actions/workflows/general.yml) [![Join the Matrix chat at https://matrix.to/#/#gopad:matrix.org](https://img.shields.io/badge/matrix-%23gopad%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#gopad:matrix.org) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/9ee290b4ea2a418a9ea320e3564ac94f)](https://app.codacy.com/gh/gopad/gopad-infra/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 This repository defines the infrastructure used by this project, including setup
-of subdomains and S3 buckets.
+of subdomains and object storage buckets and what else is needed.
 
-## Development
+## Usage
+
+We are using [Terraform][terraform] to provision all related parts. Every change
+have to be submitted via pull requests, after merging the pull request the
+changes are getting applied automatically by our CI system. It is possible to
+execute everything from a workstation, but it's encouraged to keep it in the
+hands of our CI system.
 
 ### Variables
+
+To get access to the secrets you got to install the 1Password CLI and export the
+environment variable `OP_SERVICE_ACCOUNT_TOKEN` which you can find in our shared
+store, after that you can simply execute the commands below.
 
 ```console
 cat << EOF >| .envrc
 use flake . --impure
 
-export GITHUB_TOKEN=$(gopass --password gopad/github/gopadz)
+export CLOUDFLARE_EMAIL=$(op read op://Gopad/Cloudflare/username)
+export CLOUDFLARE_API_KEY=$(op read op://Gopad/Cloudflare/token)
 
-export CLOUDFLARE_EMAIL=$(gopass --password gopad/cloudflare/email)
-export CLOUDFLARE_API_KEY=$(gopass --password gopad/cloudflare/apikey)
-
-export AWS_ACCESS_KEY_ID=$(gopass --password gopad/infra/access-key)
-export AWS_SECRET_ACCESS_KEY=$(gopass --password gopad/infra/secret-key)
+export AWS_ACCESS_KEY_ID=$(op read op://Gopad/Terraform/username)
+export AWS_SECRET_ACCESS_KEY=$(op read op://Gopad/Terraform/password)
 EOF
 ```
 
@@ -53,3 +61,5 @@ Apache-2.0
 ```console
 Copyright (c) 2018 Thomas Boerger <thomas@webhippie.de>
 ```
+
+[terraform]: https://www.terraform.io/
