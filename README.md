@@ -29,6 +29,8 @@ export CLOUDFLARE_API_KEY=$(op read op://Gopad/Cloudflare/token)
 export AWS_ACCESS_KEY_ID=$(op read op://Gopad/Terraform/username)
 export AWS_SECRET_ACCESS_KEY=$(op read op://Gopad/Terraform/password)
 EOF
+
+direnv allow
 ```
 
 ### Deployment
