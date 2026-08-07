@@ -22,11 +22,3 @@ terraform {
 provider "aws" {
   region = var.aws_region
 }
-
-resource "cloudflare_zone" "gopad" {
-  name = "gopad.eu"
-
-  account = {
-    id = var.cloudflare_account
-  }
-}
