@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/gopad/gopad-infra/compare/v1.5.0...v1.6.0) (2026-09-21)
+
+### Dependencies
+
+* **minor:** update terraform aws to ~> 6.65.0 ([#484](https://github.com/gopad/gopad-infra/issues/484)) ([ca3ddf9](https://github.com/gopad/gopad-infra/commit/ca3ddf972e98090abf403452787391b199e721e2))
+* **mise:** update dependency terraform to v1.16.3 ([#483](https://github.com/gopad/gopad-infra/issues/483)) ([e0a825a](https://github.com/gopad/gopad-infra/commit/e0a825a1c2d60a45dc1c44cd599fc85210146573))
+
 ## [1.5.0](https://github.com/gopad/gopad-infra/compare/v1.4.0...v1.5.0) (2026-09-14)
 
 ### Dependencies
