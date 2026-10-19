@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.10.0](https://github.com/gopad/gopad-infra/compare/v1.9.0...v1.10.0) (2026-10-19)
+
+### Dependencies
+
+* **minor:** update terraform aws to ~> 6.69.0 ([#497](https://github.com/gopad/gopad-infra/issues/497)) ([027390a](https://github.com/gopad/gopad-infra/commit/027390a20b50a8e2a3b7984c5f682befb76e7126))
+* **minor:** update terraform cloudflare to ~> 5.28.0 ([#495](https://github.com/gopad/gopad-infra/issues/495)) ([1960565](https://github.com/gopad/gopad-infra/commit/1960565bdc14a28ff11509db7d17f1c0996cad1e))
+* **mise:** update dependency prek to v0.5.6 ([#499](https://github.com/gopad/gopad-infra/issues/499)) ([99f3c00](https://github.com/gopad/gopad-infra/commit/99f3c001784312f89b006b3d379a8f37f0f6e939))
+* **mise:** update dependency terraform to v1.16.6 ([#496](https://github.com/gopad/gopad-infra/issues/496)) ([51ddd50](https://github.com/gopad/gopad-infra/commit/51ddd5031f0c74a918e13295b4df89b9b70cb22b))
+* **patch:** update terraform aws to v6.69.1 ([#498](https://github.com/gopad/gopad-infra/issues/498)) ([31b2e40](https://github.com/gopad/gopad-infra/commit/31b2e4087821a27914c840714fa3d80d9ede7b12))
+
 ## [1.9.0](https://github.com/gopad/gopad-infra/compare/v1.8.0...v1.9.0) (2026-10-12)
 
 ### Dependencies
