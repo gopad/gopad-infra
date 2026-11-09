@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.13.0](https://github.com/gopad/gopad-infra/compare/v1.12.0...v1.13.0) (2026-11-09)
+
+### Dependencies
+
+* **minor:** update terraform aws to ~> 6.72.0 ([#510](https://github.com/gopad/gopad-infra/issues/510)) ([7afd6de](https://github.com/gopad/gopad-infra/commit/7afd6dea5d5a2edb8430a1d5e61bc962fd15014b))
+* **mise:** update dependency prek to v0.5.10 ([#509](https://github.com/gopad/gopad-infra/issues/509)) ([29110a4](https://github.com/gopad/gopad-infra/commit/29110a47c8b6f5879a8a294943d77ad358d3cc0e))
+* **mise:** update dependency tflint to v0.66.0 ([#511](https://github.com/gopad/gopad-infra/issues/511)) ([813432a](https://github.com/gopad/gopad-infra/commit/813432a9946b9c878c3d1a68e3362e5b5e63d2e6))
+
 ## [1.12.0](https://github.com/gopad/gopad-infra/compare/v1.11.0...v1.12.0) (2026-11-02)
 
 ### Dependencies
